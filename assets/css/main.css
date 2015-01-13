@@ -3,6 +3,7 @@ body {
 }
 
 #lrg {
+    margin-top: 60px;
     min-height: 768px;
     background-image: url("/assets/images/logo-768.png");
     background-repeat: no-repeat;
