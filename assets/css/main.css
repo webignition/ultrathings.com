@@ -2,6 +2,10 @@ body {
     background-color: #4F5165;
 }
 
+#sml {
+    margin-top: 80px;
+}
+
 #lrg {
     margin-top: 60px;
     min-height: 768px;
