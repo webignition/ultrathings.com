@@ -1,0 +1,10 @@
+body {
+    background-color: #4F5165;
+}
+
+#lrg {
+    min-height: 768px;
+    background-image: url("/assets/images/logo-768.png");
+    background-repeat: no-repeat;
+    background-position: center 0;
+}

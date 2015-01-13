@@ -1,0 +1,10 @@
+# Site settings
+title: Ultra Things Title
+email: jon@ultrathings.com
+description: "Ultra Things"
+baseurl: ""
+url: "http://ultrathings.com"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
