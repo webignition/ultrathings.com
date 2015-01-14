@@ -3,7 +3,7 @@ title: Ultra Things Title
 email: jon@ultrathings.com
 description: "Ultra Things"
 baseurl: ""
-url: "http://ultrathings.com"
+url: "https://ultrathings.com"
 
 # Build settings
 markdown: kramdown
