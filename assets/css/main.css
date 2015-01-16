@@ -2,14 +2,107 @@ body {
     background-color: #4F5165;
 }
 
-#sml {
-    margin-top: 80px;
+a,
+a:focus,
+a:hover {
+    color: #fff;
 }
 
-#lrg {
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+    color: #333;
+    text-shadow: none; /* Prevent inheritence from `body` */
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+
+html,
+body {
+    height: 100%;
+    background-color: #4F5165;
+}
+body {
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+    /*padding-top: 200px;*/
+}
+
+h1 {
+    margin-bottom: 14px;
+}
+
+.navbar-inverse {
+    background-color: #4F5165;
+    border-color: #CD533B;
+    border-bottom-width: 5px;
+}
+
+.navbar-brand {
+    position: relative;
+}
+
+.navbar-brand .content {
+    font-size: 24px;
+    padding-left: 80px;
+}
+
+.navbar-inverse .navbar-brand {
+    color: inherit;
+    padding-top: 60px;
+}
+
+.navbar-nav>li>a {
+    padding: 60px 30px 30px 30px;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+    background-color: #CD533B;
+}
+
+#navbar .title {
+    display:block;
+    font-size: 24px;
+}
+
+#navbar .description {
+    display: block;
+    margin-top: 12px;
+}
+
+.nav-container .inner {
+    padding: 60px 0 30px 0;
+}
+
+#logo {
+    background-image: url('/assets/images/logo-80.png');
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    top: 30px;
+}
+
+.content-container:first-of-type {
+    margin-top: 220px;
+}
+
+.content-container {
     margin-top: 60px;
-    min-height: 768px;
-    background-image: url("/assets/images/logo-768.png");
-    background-repeat: no-repeat;
-    background-position: center 0;
+}
+
+.content-container:last-of-type {
+    margin-bottom: 660px;
+}
+
+.content-container p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 14px;
+}
+
+.h-card span {
+    display: block;
 }
