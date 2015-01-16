@@ -106,3 +106,7 @@ h1 {
 .h-card span {
     display: block;
 }
+
+.lists {
+    margin-top: 40px;
+}
