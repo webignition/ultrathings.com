@@ -72,6 +72,7 @@ h1 {
 
 .navbar-nav>li>a {
     padding: 60px 30px 30px 30px;
+    display: block;
 }
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
@@ -81,6 +82,10 @@ h1 {
 #navbar .title {
     display:block;
     font-size: 24px;
+}
+
+#navbar .fa-fw {
+    margin-right: 4px;
 }
 
 #navbar .description {
@@ -137,10 +142,6 @@ h1 {
 @media (min-width: 768px) and (max-width: 991px) {
     .navbar-inverse .navbar-brand {
         padding-top: 42px;
-    }
-
-    .navbar-nav>li>a {
-        padding: 42px 30px 38px 30px;
     }
 
     #logo {
