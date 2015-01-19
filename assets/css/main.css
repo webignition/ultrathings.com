@@ -43,14 +43,28 @@ h1 {
     position: relative;
 }
 
+.navbar-brand .content,
+.navbar-brand .tagline {
+    padding-left: 80px;
+}
+
 .navbar-brand .content {
     font-size: 24px;
-    padding-left: 80px;
+}
+
+.navbar-brand .tagline {
+    margin-top: 10px;
+    display: block;
+    opacity: 0.6;
+}
+
+.navbar-brand .tagline:hover {
+    opacity: 1;
 }
 
 .navbar-inverse .navbar-brand {
     color: inherit;
-    padding-top: 60px;
+    padding-top: 44px;
 }
 
 .navbar-nav>li>a {
