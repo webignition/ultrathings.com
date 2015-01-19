@@ -131,7 +131,7 @@ h1 {
     margin-bottom: 24px;
 }
 
-.h-card span {
+.h-card span, .h-card a {
     display: block;
 }
 
