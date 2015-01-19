@@ -33,9 +33,12 @@ h1 {
     margin-bottom: 14px;
 }
 
+.navbar-inverse, .navbar-inverse .navbar-collapse {
+    border-color: #CD533B;
+}
+
 .navbar-inverse {
     background-color: #4F5165;
-    border-color: #CD533B;
     border-bottom-width: 5px;
 }
 
@@ -160,5 +163,32 @@ h1 {
 
     .lists ul {
         padding-left: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    #logo {
+        left: 15px;
+    }
+
+    .navbar-header {
+        height: 140px;
+    }
+
+    .navbar-brand .content,
+    .navbar-brand .tagline,
+    .navbar-brand .contact-xs {
+        padding-left: 95px;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .navbar-brand .contact-xs {
+        font-size: 16px;
+        display: block;
+        margin-top: 10px;
+        opacity: 0.6;
     }
 }
