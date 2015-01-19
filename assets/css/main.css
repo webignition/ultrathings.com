@@ -124,3 +124,41 @@ h1 {
 .lists {
     margin-top: 40px;
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-inverse .navbar-brand {
+        padding-top: 42px;
+    }
+
+    .navbar-nav>li>a {
+        padding: 42px 30px 38px 30px;
+    }
+
+    #logo {
+        top: 12px;
+    }
+
+    .navbar-brand .tagline {
+        font-size: 16px;
+    }
+
+    #navbar .description {
+        display: none;
+    }
+
+    .content-container:first-of-type {
+        margin-top: 160px;
+    }
+
+    .content-container {
+        margin-top: 60px;
+    }
+
+    .content-container:last-of-type {
+        margin-bottom: 660px;
+    }
+
+    .lists ul {
+        padding-left: 14px;
+    }
+}

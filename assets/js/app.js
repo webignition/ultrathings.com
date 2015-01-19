@@ -1,5 +1,46 @@
 $(document).ready(function() {
 
+    var scrollOffset = -240;
+
+    var isScreenSize = function (sizeLabel) {
+        return ($('#is-' + sizeLabel).css('display') === 'block');
+    };
+
+    var setScreenSizeBodyClasses = function () {
+        var body = $('body');
+        var sizes = ['lg', 'md', 'sm', 'xs'];
+
+        for (var index = 0; index < sizes.length; index++) {
+            var className = 'is-' + sizes[index];
+
+            body.removeClass(className);
+
+            if (isScreenSize(sizes[index])) {
+                body.addClass(className);
+            }
+        }
+    };
+
+    setScreenSizeBodyClasses();
+
+    var setScrollOffset = function () {
+        if (isScreenSize('lg') || isScreenSize('md')) {
+            scrollOffset = -240;
+        }
+
+        if (isScreenSize('sm')) {
+            scrollOffset = -180;
+        }
+    };
+
+    setScrollOffset();
+
+    $(window).on('resize', function() {
+        setScreenSizeBodyClasses();
+        setScrollOffset();
+    });
+
+
     var navLinks = $('#navbar a');
 
     var highlightSection = function (target) {
@@ -37,14 +78,14 @@ $(document).ready(function() {
     };
 
     $('.navbar-brand').smoothScroll({
-        'offset': -240
+        'offset': scrollOffset
     }).click(function () {
         return scrollAction(this);
     });
 
 
     navLinks.smoothScroll({
-        'offset': -240
+        'offset': scrollOffset
     }).click(function () {
         return scrollAction(this);
     });
@@ -53,7 +94,7 @@ $(document).ready(function() {
         var target = $(window.location.hash);
         if (target.length) {
             $.scrollTo(target, {
-                'offset':-240
+                'offset': scrollOffset
             });
 
             highlightSection(target);
