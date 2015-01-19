@@ -153,42 +153,60 @@ h1 {
         margin-top: 160px;
     }
 
-    .content-container {
-        margin-top: 60px;
-    }
-
-    .content-container:last-of-type {
-        margin-bottom: 660px;
-    }
-
     .lists ul {
         padding-left: 14px;
     }
 }
 
 @media (max-width: 768px) {
-    #logo {
-        left: 15px;
-    }
-
     .navbar-header {
-        height: 140px;
+        height: 120px;
     }
 
     .navbar-brand .content,
     .navbar-brand .tagline,
     .navbar-brand .contact-xs {
-        padding-left: 95px;
+        padding-left: 50px;
+    }
+
+    .navbar-inverse .navbar-brand {
+        padding-top: 26px;
     }
 
     .navbar-toggle {
         display: none;
     }
 
-    .navbar-brand .contact-xs {
+    .navbar-brand .tagline,
+    .navbar-brand .contact-xs{
         font-size: 16px;
+    }
+
+    .navbar-brand .contact-xs {
         display: block;
         margin-top: 10px;
         opacity: 0.6;
     }
+
+    #logo {
+        background-image: url('/assets/images/logo-40.png');
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        left: 15px;
+        top: 15px;
+    }
+
+    .content-container:first-of-type {
+        margin-top: 160px;
+    }
+
+    /*.content-container {*/
+        /*margin-top: 60px;*/
+    /*}*/
+
+    /*.content-container:last-of-type {*/
+        /*margin-bottom: 660px;*/
+    /*}*/
 }
