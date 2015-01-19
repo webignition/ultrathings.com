@@ -135,6 +135,10 @@ h1 {
     display: block;
 }
 
+.h-card .fa-fw {
+    margin-right: 4px;
+}
+
 .lists {
     margin-top: 40px;
 }
